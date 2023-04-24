@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Document</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/scss/style.scss">
+	<link rel="stylesheet" href="/scss/header.scss">
+	<title>Vite App</title>
 </head>
+
 <body>
+	<header></header>
+	<main>
+		<div class="genres">
+			<h1>Сейчас в кино</h1>
+			<div></div>
+			<nav>
+				<p class="act_txt">Все</p>
+				<p>Боевики</p>
+				<p>Приключения</p>
+				<p>Комедии</p>
+				<p>Фантастика</p>
+				<p>Триллеры</p>
+				<p>Драма</p>
+			</nav>
+		</div>
+		<div class="movies"></div>
+	</main>
+	<footer></footer>
 
 
-    <div class="container">
-        <div class="contant">
-            <header class="header">
-                <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="apple">
-                    <img src="./img/webs.svg" alt="">
-                </a>
-
-                <nav class="nav">
-                    <a href="#">Афиша</a>
-                    <a href="#">Медиа</a>
-                    <a href="#">Фильмы</a>
-                    <a href="#">Актёры</a>
-                    <a href="#">Новости </a>
-                    <a href="#">Подборки</a>
-                    <a href="#">Категории</a>
-                </nav>
-
-               <button class="search"><span class="material-symbols-outlined">
-                search
-                </span></button>
-               <button class="btn">Войти</button>
-            </header>
-        </div>
-        <div class="contant">
-            <div class="wine">
-            <h1>Сейчас в кино</h1>
-            <div class="line"></div>
-
-            <nav class="nav2">
-                <a href="#" class="active">Все </a>
-                <a href="#">Боевики</a>
-                <a href="#">Приключения</a>
-                <a href="#">Комедии</a>
-                <a href="#">Фантастика </a>
-                <a href="#">Триллеры</a>
-                <a href="#">Драма</a>
-            </nav>
-
-        </div>
-    </div>
-        <div class="contant">
-            <div class="movie_box"></div>
-        </div>
-    </div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script.js"></script>
+	<script type="module" src="modules/main.js"></script>
 </body>
+
 </html>
