@@ -57,6 +57,10 @@ main {
         border-radius: 1px;
     }
 
+    button{
+        margin: 39px 600px ;
+    }
+
     nav {
         width: 765px;
         display: flex;
@@ -172,3 +176,33 @@ main {
         }
     }
 }
+
+.bt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+        width: 260px;
+        height: 71px;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-top: 100px;
+    }
+}
+
+.triler{
+    h2{
+        font-weight: 900;
+font-size: 65px;
+line-height: 83px;
+margin-top: 24px;
+color: #FFFFFF;
+    }
+}
+

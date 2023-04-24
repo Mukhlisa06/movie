@@ -22,7 +22,7 @@ let ganre = document.querySelector(".ganre")
 let world = document.querySelector(".world")
 let primer = document.querySelector(".primer")
 let prim = document.querySelector(".prim")
-let age = document.querySelector(".age")
+let age = document.querySelector(".time")
 
 
 headerCreate(header)
@@ -41,17 +41,17 @@ getData(`/movie/${movie_id}`)
         year.innerHTML = res.data.release_date
         country.innerHTML = res.data.production_countries[0].name                                 
         tagline.innerHTML = res.data.tagline
-        director.innerHTML = res.data.release_date
-        scenario.innerHTML = res.data.release_date
-        producer.innerHTML = res.data.release_date
-        operator.innerHTML = res.data.release_date
-        composer.innerHTML = res.data.release_date
-        poetry.innerHTML = res.data.release_date
-        mon.innerHTML = res.data.release_date
-        ganre.innerHTML = res.data.release_date
-        world.innerHTML = res.data.release_date
+        director.innerHTML = res.data.production_companies[0].name
+        scenario.innerHTML = res.data.production_companies[1].name
+        producer.innerHTML = res.data.production_companies[2].name
+        operator.innerHTML = res.data.production_companies[3].name
+        composer.innerHTML = res.data.production_companies[4].name
+        poetry.innerHTML = res.data.production_companies[5].name
+        mon.innerHTML = res.data.status
+        ganre.innerHTML = res.data.genres[0].name
+        world.innerHTML = res.data.revenue
         prim.innerHTML = res.data.release_date
-        age.innerHTML = res.data.release_date
+        age.innerHTML = res.data.runtime
         primer.innerHTML = res.data.release_date
      })
 
