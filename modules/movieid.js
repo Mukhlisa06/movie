@@ -23,8 +23,8 @@ let world = document.querySelector(".world")
 let primer = document.querySelector(".primer")
 let prim = document.querySelector(".prim")
 let age = document.querySelector(".time")
-
-
+let log = document.querySelector(".log")
+console.log(log)
 headerCreate(header)
 
 let movie_id = location.search.split('=').at(-1)

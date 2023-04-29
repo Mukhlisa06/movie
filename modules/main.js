@@ -4,7 +4,7 @@ let body = document.body
 let header = document.querySelector('header')
 let movies_cont = document.querySelector('.movies')
 let bt = document.querySelector(".bt button") 
-let btn = document.querySelector(".bt")
+let btn = document.querySelector(".log")
 headerCreate(header)
 
 getData('/movie/popular')
@@ -14,9 +14,13 @@ getData('/movie/popular')
         reload(arrslised, movies_cont)
         body.style.backgroundImage = `url(${import.meta.env.VITE_BASE_IMG + item.backdrop_path})`
         bt.onclick = () => {
+            bt.innerHTML = "Hide"
+           
             reload(res.data.results, movies_cont)
-            bt.classList.add(for_bt)
+            
             
         }
     
     })
+
+  

@@ -12,13 +12,13 @@ export function headerCreate(place) {
 			<a href="#">Актёры</a>
 			<a href="#">Новости</a>
 			<a href="#">Подборки</a>
-			<a href="#">Категории</a>
+			<a href="./pages/category.html">Категории</a>
 		</nav>
 		<div class="right">
 			<button>
 				<img src="/public/icons/search.svg" alt="icon">
 			</button>
-			<button>Войти</button>
+			<button class="log" >Войти</button>
 		</div>
     `
 }
